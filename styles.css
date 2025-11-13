@@ -1,0 +1,117 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #000;
+  color: #39ff14;
+  line-height: 1.6;
+}
+
+a {
+  color: #39ff14;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-shadow: 0 0 8px #39ff14;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #000, #003300);
+  padding: 3rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid #39ff14;
+  box-shadow: 0 0 20px #39ff14;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.6rem;
+  text-shadow: 0 0 12px #39ff14;
+}
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Profile Logo */
+.profile-photo {
+  width: 160px;
+  border-radius: 50%;
+  border: 2px solid #39ff14;
+  box-shadow: 0 0 20px #39ff14;
+  margin-bottom: 1rem;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: #111;
+  border-radius: 10px;
+  width: 250px;
+  overflow: hidden;
+  border: 2px solid #39ff14;
+  box-shadow: 0 0 12px #39ff14;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #39ff14;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px #39ff14;
+}
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  filter: brightness(0.85);
+}
+.card h3 {
+  margin: 1rem 0 0.5rem;
+}
+.card p {
+  padding: 0 1rem 1rem;
+}
+
+/* Contact */
+.contact a {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: #111;
+  border: 2px solid #39ff14;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #39ff14;
+  transition: 0.3s;
+}
+.contact a:hover {
+  background: #39ff14;
+  color: #000;
+  box-shadow: 0 0 22px #39ff14;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #39ff14;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 2px solid #39ff14;
+  margin-top: 2rem;
+  box-shadow: 0 -0 12px #39ff14;
+}
