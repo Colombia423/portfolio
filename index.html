@@ -9,8 +9,8 @@
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
-      background: #000; /* Black background */
-      color: #39ff14; /* Neon green text */
+      background: #000;
+      color: #39ff14;
       line-height: 1.6;
     }
 
@@ -25,8 +25,7 @@
 
     /* Header */
     header {
-      background: linear-gradient(135deg, #000, #003300); 
-      color: #39ff14;
+      background: linear-gradient(135deg, #000, #003300);
       padding: 3rem 1rem;
       text-align: center;
       border-bottom: 2px solid #39ff14;
@@ -34,28 +33,32 @@
     }
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
-      text-shadow: 0 0 10px #39ff14;
+      font-size: 2.6rem;
+      text-shadow: 0 0 12px #39ff14;
     }
     header p {
       font-size: 1.2rem;
       margin-top: 0.5rem;
     }
 
-    /* About Section */
+    /* Sections */
     section {
       padding: 2rem;
       max-width: 900px;
       margin: auto;
-    }
-    .profile-photo {
-      width: 140px;
-      border-radius: 50%;
-      box-shadow: 0 0 15px #39ff14;
-      border: 2px solid #39ff14;
+      text-align: center;
     }
 
-    /* Projects Section */
+    /* Profile Logo */
+    .profile-photo {
+      width: 160px;
+      border-radius: 50%;
+      border: 2px solid #39ff14;
+      box-shadow: 0 0 20px #39ff14;
+      margin-bottom: 1rem;
+    }
+
+    /* Projects */
     .projects {
       display: flex;
       flex-wrap: wrap;
@@ -63,51 +66,49 @@
       gap: 1.5rem;
       margin-top: 1.5rem;
     }
+
     .card {
       background: #111;
       border-radius: 10px;
-      box-shadow: 0 0 10px #39ff14;
       width: 250px;
       overflow: hidden;
       border: 2px solid #39ff14;
+      box-shadow: 0 0 12px #39ff14;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       color: #39ff14;
     }
     .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 25px #39ff14;
+      transform: translateY(-6px);
+      box-shadow: 0 0 30px #39ff14;
     }
     .card img {
       width: 100%;
       height: 150px;
       object-fit: cover;
-      filter: brightness(0.8);
+      filter: brightness(0.85);
     }
     .card h3 {
       margin: 1rem 0 0.5rem;
-      text-align: center;
     }
     .card p {
       padding: 0 1rem 1rem;
-      text-align: center;
     }
 
-    /* Contact Section */
+    /* Contact */
     .contact a {
       display: inline-block;
       margin: 0.5rem;
-      padding: 0.5rem 1rem;
+      padding: 0.6rem 1.2rem;
       background: #111;
-      color: #39ff14;
       border: 2px solid #39ff14;
-      border-radius: 5px;
-      box-shadow: 0 0 10px #39ff14;
-      transition: background 0.3s, box-shadow 0.3s;
+      border-radius: 8px;
+      box-shadow: 0 0 12px #39ff14;
+      transition: 0.3s;
     }
     .contact a:hover {
       background: #39ff14;
       color: #000;
-      box-shadow: 0 0 20px #39ff14;
+      box-shadow: 0 0 22px #39ff14;
     }
 
     /* Footer */
@@ -118,8 +119,8 @@
       padding: 1rem;
       font-size: 0.9rem;
       border-top: 2px solid #39ff14;
-      box-shadow: 0 -0 10px #39ff14;
       margin-top: 2rem;
+      box-shadow: 0 -0 12px #39ff14;
     }
   </style>
 </head>
@@ -131,8 +132,8 @@
   </header>
 
   <section id="about">
-    <img src="name.png" 
-         alt="Profile Photo" 
+    <img src="sandbox:/mnt/data/A_logo_features_the_name_%22Jairo_Lizcano%22_in_bold,_.png"
+         alt="Profile Logo"
          class="profile-photo">
     <h2>About Me</h2>
     <p>I’m passionate about building beautiful, user-focused, and high-performance web experiences using modern technologies.</p>
@@ -176,5 +177,3 @@
 
 </body>
 </html>
-
-
