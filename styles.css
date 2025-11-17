@@ -13,16 +13,59 @@ body {
   scroll-behavior: smooth;
 }
 
+/* NAVIGATION */
+nav {
+  background-color: #1a2530;
+  padding: 15px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+nav .logo {
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Add top padding so content doesn't hide behind navbar */
+main {
+  padding-top: 80px; /* match navbar height */
+}
+
 /* HEADER */
 header {
-  position: relative;
   text-align: center;
-  padding: 100px 20px 60px;
+  padding: 120px 20px 60px;
   background: linear-gradient(135deg, #1a2530, #31485f);
   color: white;
 }
 
-.header-content h1 {
+header h1 {
   font-size: 3.2rem;
   font-weight: 700;
   letter-spacing: -1px;
@@ -30,38 +73,9 @@ header {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
-.header-content p {
+header p {
   font-size: 1.25rem;
   opacity: 0.9;
-}
-
-/* NAVIGATION */
-nav {
-  position: absolute;
-  top: 20px;
-  right: 40px;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-}
-
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 6px 10px;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-}
-
-.nav-links li a:hover {
-  background-color: #f39c12;
-  color: white;
-  transform: translateY(-2px);
 }
 
 /* ABOUT SECTION */
@@ -190,20 +204,21 @@ footer {
 }
 
 /* RESPONSIVE */
+@media (max-width: 900px) {
+  nav ul {
+    gap: 20px;
+  }
+}
+
 @media (max-width: 600px) {
-  .header-content h1 { font-size: 2.2rem; }
-  .header-content p { font-size: 1.2rem; }
+  header h1 { font-size: 2.2rem; }
+  header p { font-size: 1.2rem; }
   #about h2, #projects h2, .contact h2 { font-size: 2rem; }
   .contact a { font-size: 1rem; padding: 8px 15px; }
-
   nav {
-    position: static;
-    margin-bottom: 20px;
+    padding: 10px 20px;
   }
-
-  .nav-links {
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
+  nav ul {
+    gap: 12px;
   }
 }
