@@ -1,52 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project One | Jairo Lizcano</title>
 
+  <!-- SEO -->
+  <meta name="description" content="Project One by Jairo Lizcano — A sleek, responsive website built with HTML & CSS.">
+  <meta name="keywords" content="Jairo Lizcano, project one, HTML, CSS, responsive design">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- External CSS -->
   <link rel="stylesheet" href="styles.css">
 
   <style>
-    /* Optional custom styles for this page */
+    /* PROJECT PAGE SPECIFIC STYLING */
     .project-header {
       text-align: center;
-      margin: 50px 0 20px;
+      padding: 100px 20px 50px;
+      background: linear-gradient(135deg, #1a2530, #31485f);
+      color: white;
     }
 
     .project-header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* fix blurred effect */
+    }
+
+    .project-header p {
+      font-size: 1.25rem;
+      opacity: 0.9;
     }
 
     .project-content {
-      max-width: 800px;
-      padding: 20px;
+      max-width: 900px;
       margin: auto;
+      padding: 50px 20px;
       line-height: 1.7;
+    }
+
+    .project-content h2 {
+      font-size: 2rem;
+      margin: 30px 0 15px;
+      color: #1a2530;
+      text-align: center;
+    }
+
+    .project-content p, 
+    .project-content ul {
+      font-size: 1.05rem;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .project-content ul {
+      padding-left: 20px;
+      list-style-type: disc;
     }
 
     .project-image {
       width: 100%;
-      border-radius: 10px;
-      margin-bottom: 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
 
     .back-link {
-      display: block;
+      display: inline-block;
       text-align: center;
       margin-top: 40px;
       font-size: 1.2rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #31485f;
+      transition: color 0.22s ease, transform 0.22s ease;
+    }
+
+    .back-link:hover {
+      color: #1a2530;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #555;
+      font-size: 0.95rem;
+      background: #f5f7fa;
     }
   </style>
 </head>
-
 <body>
 
+  <!-- HEADER -->
   <header class="project-header">
     <h1>Project One</h1>
-    <p>A sleek, responsive website built using HTML & CSS</p>
+    <p>A sleek, responsive website built with HTML & CSS</p>
   </header>
 
+  <!-- PROJECT CONTENT -->
   <main class="project-content">
 
     <img src="https://via.placeholder.com/800x400?text=Project+1+Showcase"
@@ -55,9 +111,8 @@
 
     <h2>Overview</h2>
     <p>
-      Project One is a modern, responsive webpage that demonstrates clean UI layout, 
-      accessibility, and mobile-first design principles. It is built entirely with 
-      semantic HTML and organized CSS.
+      Project One is a modern, responsive webpage demonstrating clean UI layout, accessibility, and mobile-first design principles. 
+      It is built entirely with semantic HTML and organized CSS.
     </p>
 
     <h2>Features</h2>
@@ -78,12 +133,10 @@
 
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    <p style="text-align:center; padding:20px;">
-      © 2025 Jairo Lizcano — Built with ❤️ using HTML & CSS
-    </p>
+    <p>© 2025 Jairo Lizcano — Built with ❤️ using HTML & CSS</p>
   </footer>
 
 </body>
 </html>
-
