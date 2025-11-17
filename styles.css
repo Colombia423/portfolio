@@ -9,31 +9,34 @@
 body {
   background: #f5f7fa;
   color: #222;
-  line-height: 1.6;
+  line-height: 1.7;
+  padding-bottom: 40px;
 }
 
-/* HEADER (Updated professional gradient) */
+/* HEADER */
 header {
   text-align: center;
-  padding: 90px 20px;
-  background: linear-gradient(135deg, #1a2a3a, #4b6b8a);
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #1a2530, #31485f); /* Professional muted gradient */
   color: white;
 }
 
 header h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   opacity: 0.9;
 }
 
 /* ABOUT SECTION */
 #about {
   text-align: center;
-  padding: 60px 20px;
+  padding: 70px 20px;
   max-width: 900px;
   margin: auto;
 }
@@ -41,23 +44,43 @@ header p {
 .profile-photo {
   width: 160px;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
+}
+
+#about h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #1a2530;
+}
+
+#about p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: auto;
+  color: #444;
 }
 
 /* PROJECTS SECTION */
 #projects {
-  padding: 60px 20px;
-  max-width: 1100px;
+  padding: 70px 20px;
+  max-width: 1200px;
   margin: auto;
   text-align: center;
 }
 
+#projects h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #1a2530;
+}
+
 .projects {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .card {
@@ -66,49 +89,67 @@ header p {
   border-radius: 12px;
   overflow: hidden;
   padding-bottom: 20px;
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
-  transition: transform .2s ease, box-shadow .2s ease;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
 }
 
 .card img {
   width: 100%;
-  height: 180px;
+  height: 190px;
   object-fit: cover;
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.14);
 }
 
 .card h3 {
-  padding-top: 12px;
+  padding-top: 15px;
+  font-size: 1.3rem;
+  color: #1a2530;
+}
+
+.card p {
+  max-width: 85%;
+  margin: 10px auto 0;
+  font-size: 0.95rem;
+  color: #555;
 }
 
 /* CONTACT SECTION */
 .contact {
   text-align: center;
-  padding: 60px 20px;
+  padding: 70px 20px;
+}
+
+.contact h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #1a2530;
 }
 
 .contact a {
   display: inline-block;
-  margin: 12px;
-  font-size: 1.2rem;
-  font-weight: bold;
+  margin: 14px;
+  font-size: 1.25rem;
+  font-weight: 600;
   text-decoration: none;
-  color: #2b4c6e;
-  transition: color .2s ease;
+  color: #31485f; /* Muted professional blue */
+  transition: color 0.22s ease, transform 0.22s ease;
 }
 
 .contact a:hover {
-  color: #1a2a3a;
+  color: #1a2530;
+  transform: translateY(-3px);
 }
 
 /* FOOTER */
 footer {
-  margin-top: 40px;
+  margin-top: 30px;
   text-align: center;
   padding: 20px;
   color: #555;
+  font-size: 0.95rem;
 }
