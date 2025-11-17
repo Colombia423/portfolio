@@ -14,6 +14,32 @@
 
   <!-- External CSS -->
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Minimal styling for demonstration */
+    body { font-family: Arial, sans-serif; margin:0; padding:0; }
+    header { text-align:center; padding:50px 20px; background:#f5f5f5; }
+    header h1 { margin:0; font-size:2.5rem; }
+    header p { font-size:1.2rem; color:#555; }
+    .profile-photo { width:150px; border-radius:50%; display:block; margin:20px auto; }
+
+    section { padding:50px 20px; max-width:1000px; margin:auto; }
+    h2 { text-align:center; margin-bottom:40px; }
+
+    .projects { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .card { border:1px solid #ddd; border-radius:10px; overflow:hidden; width:300px; text-align:center; transition: transform 0.3s; }
+    .card:hover { transform:scale(1.05); }
+    .card img { width:100%; }
+    .card h3 { margin:10px 0; }
+    .card p { padding:0 10px 20px; }
+
+    .card a { text-decoration:none; color:inherit; display:block; }
+
+    .contact { text-align:center; }
+    .contact a { display:inline-block; margin:10px; text-decoration:none; font-size:1.2rem; }
+
+    footer { text-align:center; padding:20px; background:#f5f5f5; }
+  </style>
 </head>
 
 <body>
@@ -29,7 +55,7 @@
       <img src="name.png" alt="Jairo Lizcano Logo" class="profile-photo">
       <h2>About Me</h2>
       <p>
-        I’m passionate about building, user-focused, and high-performance web experiences using modern technologies.
+        I’m passionate about building user-focused and high-performance web experiences using modern technologies.
         My goal is to bring ideas to life through clean design and seamless user interactions.
       </p>
     </section>
@@ -40,21 +66,27 @@
       <div class="projects">
 
         <div class="card">
-          <img src="https://via.placeholder.com/400x200?text=Project+1" alt="Project One Screenshot">
-          <h3>Project One</h3>
-          <p>A sleek, responsive website built with HTML, CSS.</p>
+          <a href="project1.html">
+            <img src="https://via.placeholder.com/400x200?text=Project+1" alt="Project One Screenshot">
+            <h3>Project One</h3>
+            <p>A sleek, responsive website built with HTML & CSS.</p>
+          </a>
         </div>
 
         <div class="card">
-          <img src="https://via.placeholder.com/400x200?text=Project+2" alt="Project Two Screenshot">
-          <h3>Project Two</h3>
-          <p>A web application prototype featuring dynamic UI/UX concepts. Coming soon!</p>
+          <a href="#">
+            <img src="https://via.placeholder.com/400x200?text=Project+2" alt="Project Two Screenshot">
+            <h3>Project Two</h3>
+            <p>A web application prototype featuring dynamic UI/UX concepts. Coming soon!</p>
+          </a>
         </div>
 
         <div class="card">
-          <img src="https://via.placeholder.com/400x200?text=Project+3" alt="Project Three Screenshot">
-          <h3>Project Three</h3>
-          <p>.</p>
+          <a href="#">
+            <img src="https://via.placeholder.com/400x200?text=Project+3" alt="Project Three Screenshot">
+            <h3>Project Three</h3>
+            <p>.</p>
+          </a>
         </div>
 
       </div>
