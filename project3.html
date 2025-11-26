@@ -23,6 +23,11 @@
       text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
     }
 
+    .project-header p {
+      font-size: 1.25rem;
+      opacity: 0.9;
+    }
+
     .project-content {
       max-width: 900px;
       margin: auto;
@@ -37,8 +42,11 @@
       color: #1a2530;
     }
 
+    /* ⭐ FIXED IMAGE — matches Projects 1 & 2 */
     .project-image {
       width: 100%;
+      height: 230px;       /* same height as the other project images */
+      object-fit: cover;   /* ensures perfect crop and consistency */
       border-radius: 12px;
       margin-bottom: 30px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -52,15 +60,24 @@
       color: #31485f;
       transition: 0.22s;
     }
+
     .back-link:hover {
       color: #1a2530;
       transform: translateY(-3px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+      color: #555;
+      background: #f5f7fa;
     }
   </style>
 </head>
 <body>
 
-  <!-- NAVIGATION -->
+  <!-- NAVIGATION (same as homepage) -->
   <nav class="navbar">
     <div class="container nav-inner">
       <a href="index.html" class="logo">Jairo<span>Lizcano</span></a>
@@ -72,19 +89,21 @@
     </div>
   </nav>
 
+  <!-- HEADER -->
   <header class="project-header">
     <h1>Pancake Recipe Page</h1>
     <p>A clean and modern recipe page built with HTML & CSS.</p>
   </header>
 
+  <!-- PROJECT CONTENT -->
   <main class="project-content">
 
-    <img src="box/project3.png" alt="Pancake Recipe Project Screenshot" class="project-image" />
+    <img src="box/project3.png" alt="Pancake Recipe Page Screenshot" class="project-image" />
 
     <h2>Overview</h2>
     <p>
       Project Three is a modern and visually appealing recipe webpage created with 
-      <strong>HTML</strong> and <strong>CSS</strong>. The main goal was to achieve a clean, 
+      <strong>HTML</strong> and <strong>CSS</strong>. The main goal was to achieve a clean,
       food-blog-style layout that is easy to read and visually engaging.
     </p>
 
@@ -94,17 +113,22 @@
       <li>Ingredient list section</li>
       <li>Step-by-step instructions</li>
       <li>Clean and smooth typography</li>
-      <li>Fully responsive layout</li>
+      <li>Fully responsive layout across devices</li>
     </ul>
 
     <h2>Technologies Used</h2>
     <ul>
-      <li>HTML5 Semantics</li>
-      <li>CSS3 for layout and styling</li>
+      <li>HTML5 semantic structure</li>
+      <li>CSS3 for layout, spacing, and styling</li>
     </ul>
 
     <a href="index.html" class="back-link">⬅ Back to Portfolio</a>
   </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Jairo Lizcano — Built with ❤️ using HTML & CSS</p>
+  </footer>
 
 </body>
 </html>
