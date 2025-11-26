@@ -1,40 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Project One | Jairo Lizcano</title>
 
-  <!-- SEO -->
-  <meta name="description" content="Project One by Jairo Lizcano — A sleek, responsive website built with HTML & CSS.">
-  <meta name="keywords" content="Jairo Lizcano, project one, HTML, CSS, responsive design">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png">
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="A Netflix-style landing page UI designed in Figma by Jairo Lizcano.">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
 
   <style>
-    /* PROJECT PAGE SPECIFIC STYLING */
     .project-header {
       text-align: center;
-      padding: 100px 20px 50px;
+      padding: 130px 20px 60px;
       background: linear-gradient(135deg, #1a2530, #31485f);
       color: white;
     }
-
     .project-header h1 {
       font-size: 3rem;
-      font-weight: 700;
       margin-bottom: 12px;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* fix blurred effect */
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
     }
-
-    .project-header p {
-      font-size: 1.25rem;
-      opacity: 0.9;
-    }
+    .project-header p { font-size: 1.25rem; opacity: 0.9; }
 
     .project-content {
       max-width: 900px;
@@ -42,24 +29,11 @@
       padding: 50px 20px;
       line-height: 1.7;
     }
-
     .project-content h2 {
       font-size: 2rem;
-      margin: 30px 0 15px;
       color: #1a2530;
       text-align: center;
-    }
-
-    .project-content p, 
-    .project-content ul {
-      font-size: 1.05rem;
-      color: #444;
-      margin-bottom: 20px;
-    }
-
-    .project-content ul {
-      padding-left: 20px;
-      list-style-type: disc;
+      margin: 30px 0 15px;
     }
 
     .project-image {
@@ -71,72 +45,65 @@
 
     .back-link {
       display: inline-block;
-      text-align: center;
       margin-top: 40px;
       font-size: 1.2rem;
       font-weight: 600;
-      text-decoration: none;
       color: #31485f;
-      transition: color 0.22s ease, transform 0.22s ease;
+      transition: 0.22s ease;
     }
-
     .back-link:hover {
       color: #1a2530;
       transform: translateY(-3px);
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #555;
-      font-size: 0.95rem;
-      background: #f5f7fa;
     }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">Jairo<span>Lizcano</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <header class="project-header">
-    <h1>Project One</h1>
-    <p>A sleek, responsive website built with HTML & CSS</p>
+    <h1>Netflix Landing Page (Figma)</h1>
+    <p>A homepage-style UI inspired by Netflix, designed in Figma.</p>
   </header>
 
-  <!-- PROJECT CONTENT -->
   <main class="project-content">
 
-    <img src="https://via.placeholder.com/800x400?text=Project+1+Showcase"
-         alt="Project One Full Screenshot"
-         class="project-image">
+    <img src="box/project1.png" alt="Netflix UI Project Screenshot" class="project-image" />
 
     <h2>Overview</h2>
     <p>
-      Project One is a modern, responsive webpage demonstrating clean UI layout, accessibility, and mobile-first design principles. 
-      It is built entirely with semantic HTML and organized CSS.
+      Project One is a Netflix-inspired landing page UI created entirely in <strong>Figma</strong>.
+      The goal was to replicate the bold, modern structure found in streaming platforms while keeping
+      the layout clean, readable, and visually balanced.
     </p>
 
     <h2>Features</h2>
     <ul>
-      <li>Fully responsive layout</li>
-      <li>Clean and modern design</li>
-      <li>Lightweight and fast-loading</li>
-      <li>Accessible structure using proper semantics</li>
+      <li>Modern streaming-style layout</li>
+      <li>Strong typography hierarchy</li>
+      <li>High-contrast hero section and imagery</li>
+      <li>Component-based UI structure</li>
+      <li>Designed fully in Figma</li>
     </ul>
 
-    <h2>Technologies Used</h2>
+    <h2>Tools Used</h2>
     <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
+      <li>Figma (UI Design)</li>
+      <li>Auto-layout, components, layout grids</li>
     </ul>
 
     <a href="index.html" class="back-link">⬅ Back to Portfolio</a>
-
   </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Jairo Lizcano — Built with ❤️ using HTML & CSS</p>
-  </footer>
 
 </body>
 </html>
