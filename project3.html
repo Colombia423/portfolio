@@ -42,14 +42,15 @@
       color: #1a2530;
     }
 
-    /* ⭐ FIXED IMAGE — matches Projects 1 & 2 */
+    /* ⭐ UPDATED — Shows full image without cropping */
     .project-image {
       width: 100%;
-      height: 230px;       /* same height as the other project images */
-      object-fit: cover;   /* ensures perfect crop and consistency */
+      height: auto;         /* 🔥 allows full image to show */
+      object-fit: contain;  /* 🔥 prevents cropping */
       border-radius: 12px;
       margin-bottom: 30px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      background: #ffffff;  /* helps image boundaries look clean */
     }
 
     .back-link {
@@ -77,7 +78,7 @@
 </head>
 <body>
 
-  <!-- NAVIGATION (same as homepage) -->
+  <!-- NAVIGATION -->
   <nav class="navbar">
     <div class="container nav-inner">
       <a href="index.html" class="logo">Jairo<span>Lizcano</span></a>
@@ -89,13 +90,11 @@
     </div>
   </nav>
 
-  <!-- HEADER -->
   <header class="project-header">
     <h1>Pancake Recipe Page</h1>
     <p>A clean and modern recipe page built with HTML & CSS.</p>
   </header>
 
-  <!-- PROJECT CONTENT -->
   <main class="project-content">
 
     <img src="box/project3.png" alt="Pancake Recipe Page Screenshot" class="project-image" />
@@ -118,14 +117,13 @@
 
     <h2>Technologies Used</h2>
     <ul>
-      <li>HTML5 semantic structure</li>
-      <li>CSS3 for layout, spacing, and styling</li>
+      <li>HTML5 Semantics</li>
+      <li>CSS3 for layout and styling</li>
     </ul>
 
     <a href="index.html" class="back-link">⬅ Back to Portfolio</a>
   </main>
 
-  <!-- FOOTER -->
   <footer>
     <p>© 2025 Jairo Lizcano — Built with ❤️ using HTML & CSS</p>
   </footer>
