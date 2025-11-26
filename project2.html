@@ -1,76 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Project Two | Jairo Lizcano</title>
 
-  <meta name="description" content="Project Two by Jairo Lizcano — A web application prototype featuring dynamic UI/UX concepts.">
-  <meta name="keywords" content="Jairo Lizcano, project two, web app, UI, UX, HTML, CSS, JavaScript">
-
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Breaking Bad themed show page created using HTML & CSS.">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
 
   <style>
-    /* Same styling as Project One */
     .project-header {
       text-align: center;
-      padding: 100px 20px 50px;
+      padding: 130px 20px 60px;
       background: linear-gradient(135deg, #1a2530, #31485f);
       color: white;
     }
+    .project-header h1 { font-size: 3rem; margin-bottom: 12px; text-shadow: 1px 1px 3px rgba(0,0,0,0.3); }
+    .project-header p { font-size: 1.25rem; opacity: 0.9; }
 
-    .project-header h1 { font-size: 3rem; font-weight: 700; margin-bottom: 12px; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);}
-    .project-header p { font-size: 1.25rem; opacity: 0.9;}
-    .project-content { max-width: 900px; margin: auto; padding: 50px 20px; line-height: 1.7;}
-    .project-content h2 { font-size: 2rem; margin: 30px 0 15px; color: #1a2530; text-align: center;}
-    .project-content p, .project-content ul { font-size: 1.05rem; color: #444; margin-bottom: 20px;}
-    .project-content ul { padding-left: 20px; list-style-type: disc;}
-    .project-image { width: 100%; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);}
-    .back-link { display: inline-block; text-align: center; margin-top: 40px; font-size: 1.2rem; font-weight: 600; text-decoration: none; color: #31485f; transition: color 0.22s ease, transform 0.22s ease;}
-    .back-link:hover { color: #1a2530; transform: translateY(-3px);}
-    footer { text-align: center; padding: 20px; color: #555; font-size: 0.95rem; background: #f5f7fa;}
+    .project-content { max-width: 900px; margin: auto; padding: 50px 20px; line-height: 1.7; }
+    .project-content h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin: 30px 0 15px;
+      color: #1a2530;
+    }
+
+    .project-image { width: 100%; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+
+    .back-link { display: inline-block; margin-top: 40px; font-size: 1.2rem; font-weight: 600; color: #31485f; transition: 0.22s; }
+    .back-link:hover { color: #1a2530; transform: translateY(-3px); }
   </style>
 </head>
 <body>
 
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">Jairo<span>Lizcano</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <header class="project-header">
-    <h1>Project Two</h1>
-    <p>A web application prototype featuring dynamic UI/UX concepts</p>
+    <h1>Breaking Bad Show Page</h1>
+    <p>A themed webpage built using HTML and CSS.</p>
   </header>
 
   <main class="project-content">
-    <img src="https://via.placeholder.com/800x400?text=Project+2+Showcase"
-         alt="Project Two Full Screenshot"
-         class="project-image">
+
+    <img src="box/project2.png" alt="Breaking Bad Project Screenshot" class="project-image" />
 
     <h2>Overview</h2>
     <p>
-      Project Two is a dynamic web app prototype showcasing interactive UI components and UX design experimentation.
+      Project Two is a themed show page inspired by <strong>Breaking Bad</strong>, built using 
+      <strong>HTML</strong> and <strong>CSS</strong>. It recreates the visual tone of the series through 
+      layout, spacing, colors, and typography.
     </p>
 
     <h2>Features</h2>
     <ul>
-      <li>Interactive UI components</li>
-      <li>Responsive and adaptive design</li>
-      <li>Prototype for modern web apps</li>
-      <li>Focus on user experience and design flow</li>
+      <li>Hero section with show artwork</li>
+      <li>About the show section</li>
+      <li>Main cast showcase</li>
+      <li>Structured layout using semantic HTML</li>
+      <li>Fully responsive design</li>
     </ul>
 
     <h2>Technologies Used</h2>
     <ul>
       <li>HTML5</li>
       <li>CSS3</li>
-      <li>JavaScript</li>
+      <li>Responsive design techniques</li>
     </ul>
 
     <a href="index.html" class="back-link">⬅ Back to Portfolio</a>
   </main>
 
-  <footer>
-    <p>© 2025 Jairo Lizcano — Built with ❤️ using HTML & CSS</p>
-  </footer>
-
 </body>
 </html>
-
