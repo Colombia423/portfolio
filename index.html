@@ -12,85 +12,149 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png">
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- External CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="top">
 
   <!-- NAVIGATION -->
-  <nav>
-    <a href="#" class="logo">Jairo Lizcano</a>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">Jairo<span>Lizcano</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <!-- HEADER -->
-  <header>
-    <h1>Hi, I'm Jairo Lizcano</h1>
-    <p>Web Developer • Designer • Creator</p>
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-tagline">Web Developer • Designer • Creator</p>
+        <h1>Hi, I'm <span>Jairo&nbsp;Lizcano</span></h1>
+        <p class="hero-subtitle">
+          I design and build clean, responsive websites focused on usability, performance, 
+          and modern visual design.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn ghost">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="profile-ring">
+          <img src="name.png" alt="Logo of Jairo Lizcano" class="profile-photo">
+        </div>
+      </div>
+    </div>
   </header>
 
   <!-- MAIN CONTENT -->
   <main>
 
     <!-- ABOUT SECTION -->
-    <section id="about">
-      <img src="name.png" alt="Jairo Lizcano Logo" class="profile-photo">
-      <h2>About Me</h2>
-      <p>
-        I’m passionate about building user-focused and high-performance web experiences using modern technologies.
-        My goal is to bring ideas to life through clean design and seamless user interactions.
-      </p>
+    <section id="about" class="section">
+      <div class="container section-inner about-inner">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            I’m passionate about building user-focused and high-performance web experiences using 
+            modern technologies. My goal is to bring ideas to life through clean design, 
+            thoughtful layouts, and seamless user interactions.
+          </p>
+          <p>
+            I enjoy combining aesthetics with functionality — from typography and color systems 
+            to responsive grids and smooth micro-interactions. I’m always learning and exploring 
+            new tools to improve my work.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects">
-
-        <div class="card">
-          <a href="project1.html">
-            <img src="https://via.placeholder.com/400x200?text=Project+1" alt="Project One Screenshot">
-            <h3>Project One</h3>
-            <p>A sleek, responsive website built with HTML & CSS.</p>
-          </a>
+    <section id="projects" class="section">
+      <div class="container section-inner">
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p>A selection of recent work that highlights my approach to design and development.</p>
         </div>
 
-        <div class="card">
-          <a href="project2.html">
-            <img src="https://via.placeholder.com/400x200?text=Project+2" alt="Project Two Screenshot">
-            <h3>Project Two</h3>
-            <p>A web application prototype featuring dynamic UI/UX concepts.</p>
-          </a>
-        </div>
+        <div class="projects-grid">
 
-        <div class="card">
-          <a href="project3.html">
-            <img src="https://via.placeholder.com/400x200?text=Project+3" alt="Project Three Screenshot">
-            <h3>Project Three</h3>
-            <p>A modern project showcasing responsive design and functionality.</p>
-          </a>
-        </div>
+          <article class="card">
+            <a href="project1.html">
+              <div class="card-image">
+                <img src="https://via.placeholder.com/400x200?text=Project+1" alt="Screenshot of Project One">
+              </div>
+              <div class="card-body">
+                <h3>Project One</h3>
+                <p>A sleek, responsive website built with semantic HTML and modern CSS.</p>
+              </div>
+            </a>
+          </article>
 
+          <article class="card">
+            <a href="project2.html">
+              <div class="card-image">
+                <img src="https://via.placeholder.com/400x200?text=Project+2" alt="Screenshot of Project Two">
+              </div>
+              <div class="card-body">
+                <h3>Project Two</h3>
+                <p>A web application prototype featuring interactive UI and UX concepts.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="card">
+            <a href="project3.html">
+              <div class="card-image">
+                <img src="https://via.placeholder.com/400x200?text=Project+3" alt="Screenshot of Project Three">
+              </div>
+              <div class="card-body">
+                <h3>Project Three</h3>
+                <p>A modern layout showcasing responsive design patterns and components.</p>
+              </div>
+            </a>
+          </article>
+
+        </div>
       </div>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <a href="mailto:jairolizcanoguerra@hotmail.com" aria-label="Send me an email">📧 Email Me</a>
-      <a href="https://linkedin.com/in/jairolizcano" target="_blank" aria-label="Visit my LinkedIn">💼 LinkedIn</a>
-      <a href="https://github.com/jairolizcano" target="_blank" aria-label="Visit my GitHub">🐙 GitHub</a>
+    <section id="contact" class="section contact-section">
+      <div class="container section-inner contact-inner">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Interested in working together or just want to say hi? Reach out:</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:jairolizcanoguerra@hotmail.com" aria-label="Send me an email" class="contact-pill">
+            📧 Email
+          </a>
+          <a href="https://linkedin.com/in/jairolizcano" target="_blank" rel="noopener" aria-label="Visit my LinkedIn" class="contact-pill">
+            💼 LinkedIn
+          </a>
+          <a href="https://github.com/jairolizcano" target="_blank" rel="noopener" aria-label="Visit my GitHub" class="contact-pill">
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
     </section>
 
   </main>
 
   <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Jairo Lizcano — Built with ❤️ using HTML & CSS</p>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 <span>Jairo Lizcano</span> — Built with ❤️ using HTML &amp; CSS</p>
+    </div>
   </footer>
 
 </body>
