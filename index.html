@@ -1,92 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jairo Lizcano | Portfolio</title>
 
-  <!-- SEO -->
-  <meta name="description" content="Portfolio of Jairo Lizcano — Web Developer, Designer, and Creator who builds modern and responsive web experiences.">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png">
-
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Professional portfolio of Jairo Lizcano — Web Developer & Designer specializing in clean, modern, and responsive interfaces.">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body id="top">
 
   <!-- NAVIGATION -->
-  <nav>
-    <a href="#top" class="logo">Jairo<span>Lizcano</span></a>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">Jairo<span>Lizcano</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <!-- HEADER -->
-  <header>
-    <p class="hero-tagline">Web Developer • Designer • Creator</p>
+  <!-- HEADER / HERO -->
+  <header class="hero-section">
+    <p class="hero-tagline">Web Developer • Designer</p>
     <h1>Hi, I'm <span>Jairo Lizcano</span></h1>
     <p class="hero-subtitle">
-      I design and build clean, responsive websites focused on usability and modern visual design.
+      I create modern, responsive, and user-centered web experiences through strong visual design and front-end development.
     </p>
-    <img src="frog.png" alt="Profile Photo" class="profile-photo">
+    <img src="frog.png" alt="Profile Photo" class="profile-photo" />
   </header>
 
   <!-- ABOUT -->
-  <section id="about">
+  <section id="about" class="section about-section">
     <h2>About Me</h2>
     <p>
-      I’m passionate about building user-focused web experiences. My work blends clean design, accessible layouts,
-      and thoughtful interactions.
+      I am a designer and developer focused on clarity, structure, and clean visual systems.
+      My work emphasizes usability, accessibility, and thoughtful layout development.
     </p>
     <p>
-      I enjoy combining aesthetics with functionality — continually learning new tools to improve my craft.
+      I enjoy transforming ideas into functional websites, using modern tools and design principles to ensure consistency and strong presentation.
     </p>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects">
+  <section id="projects" class="section projects-section">
     <h2>Projects</h2>
-    <p>A selection of my recent work in design and development.</p>
+    <p>A curated selection of recent work in web design and development.</p>
 
-    <!-- ⭐ FEATURED CAMPAIGN PROJECT -->
-    <div class="featured-project">
-      <article class="featured-card">
-        <a href="campaign.html">
-          <div class="featured-image">
-            <img src="box/important.png" alt="Campaign Project">
-          </div>
-          <div class="featured-body">
-            <h3>🔥 Campaign Project</h3>
-            <p>
-              A collaborative multimedia campaign featuring emotional storytelling,
-              strong visuals, and refined layout design.
-              This project highlights teamwork, design execution, and polished coding.
-            </p>
-          </div>
-        </a>
-      </article>
-    </div>
+    <!-- FEATURED PROJECT -->
+    <article class="featured-project">
+      <a href="campaign.html" class="featured-link">
+        <div class="featured-image">
+          <img src="box/important.png" alt="Campaign Project Image" />
+        </div>
+        <div class="featured-body">
+          <h3>Campaign Project</h3>
+          <p>
+            A collaborative visual campaign emphasizing emotional storytelling, cohesive layout design, and professional presentation.
+          </p>
+        </div>
+      </a>
+    </article>
 
-    <!-- OTHER PROJECTS -->
+    <!-- PROJECT GRID -->
     <div class="projects-grid">
 
       <article class="card">
         <a href="project1.html">
           <div class="card-image">
-            <img src="box/project1.png" alt="Netflix Landing Page">
+            <img src="box/project1.png" alt="Netflix Landing Page" />
           </div>
           <div class="card-body">
             <h3>Netflix Landing Page</h3>
-            <p>A homepage-style UI inspired by Netflix with a bold, modern layout.</p>
+            <p>A homepage layout inspired by Netflix, designed with a strong visual hierarchy and balanced spacing.</p>
           </div>
         </a>
       </article>
@@ -94,11 +84,11 @@
       <article class="card">
         <a href="project2.html">
           <div class="card-image">
-            <img src="box/project2.png" alt="Breaking Bad Page">
+            <img src="box/project2.png" alt="Breaking Bad Page" />
           </div>
           <div class="card-body">
             <h3>Breaking Bad Show Page</h3>
-            <p>A TV series-themed layout with customized styling and structure.</p>
+            <p>A themed information page featuring a structured layout and custom color direction.</p>
           </div>
         </a>
       </article>
@@ -106,11 +96,11 @@
       <article class="card">
         <a href="project3.html">
           <div class="card-image">
-            <img src="box/project3.png" alt="Pancake Recipe Page">
+            <img src="box/project3.png" alt="Pancake Recipe Page" />
           </div>
           <div class="card-body">
             <h3>Pancake Recipe Page</h3>
-            <p>A structured recipe page designed with clean visuals and layout logic.</p>
+            <p>A minimal recipe layout built to demonstrate spacing, hierarchy, and visual clarity.</p>
           </div>
         </a>
       </article>
@@ -119,23 +109,20 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="contact-section">
-    <h2>Contact Me</h2>
-    <p>
-      Have a project in mind? Want to collaborate?  
-      Feel free to reach out — I’m always open to connecting.
-    </p>
+  <section id="contact" class="section contact-section">
+    <h2>Contact</h2>
+    <p>If you’d like to discuss a project or collaboration, feel free to reach out.</p>
 
     <div class="contact-links">
-      <a href="mailto:jairolizcanoguerra@hotmail.com" class="contact-pill">📧 Email</a>
-      <a href="https://linkedin.com/in/jairolizcano" target="_blank" class="contact-pill">💼 LinkedIn</a>
-      <a href="https://github.com/jairolizcano" target="_blank" class="contact-pill">🐙 GitHub</a>
+      <a class="contact-pill" href="mailto:jairolizcanoguerra@hotmail.com">Email</a>
+      <a class="contact-pill" href="https://linkedin.com/in/jairolizcano" target="_blank">LinkedIn</a>
+      <a class="contact-pill" href="https://github.com/jairolizcano" target="_blank">GitHub</a>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <p>© 2025 <span>Jairo Lizcano</span> — Built with ❤️ using HTML & CSS</p>
+  <footer class="footer">
+    <p>© 2025 Jairo Lizcano — Portfolio Website</p>
   </footer>
 
 </body>
