@@ -1,72 +1,150 @@
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="section">
-      <div class="container section-inner">
-        <div class="section-header">
-          <h2>Projects</h2>
-          <p>A selection of recent work that highlights my approach to design and development.</p>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jairo Lizcano | Portfolio</title>
 
-        <!-- ⭐ FEATURED CAMPAIGN PROJECT -->
-        <div class="featured-project">
-          <article class="featured-card">
-            <a href="campaign.html">
-              <div class="featured-image">
-                <img src="box/campaign.png" alt="Campaign Project Preview">
-              </div>
-              <div class="featured-body">
-                <h3>🔥 Campaign Project</h3>
-                <p>
-                  A standout multimedia and web campaign combining visual design, strategy,  
-                  and interactive elements. This project represents my strongest work —  
-                  focusing on branding, layout, and storytelling through design.
-                </p>
-              </div>
-            </a>
-          </article>
-        </div>
-        <!-- END FEATURED PROJECT -->
+  <!-- SEO -->
+  <meta name="description" content="Portfolio of Jairo Lizcano — Web Developer, Designer, and Creator who builds beautiful, high-performance web experiences.">
+  <meta name="keywords" content="Jairo Lizcano, web developer, portfolio, HTML, CSS, JavaScript, design">
 
-        <div class="projects-grid">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
 
-          <!-- Project 1 -->
-          <article class="card">
-            <a href="project1.html">
-              <div class="card-image">
-                <img src="box/project1.png" alt="Project 1 Preview">
-              </div>
-              <div class="card-body">
-                <h3>Netflix Landing Page</h3>
-                <p>A homepage-style UI inspired by Netflix with a clean, bold layout.</p>
-              </div>
-            </a>
-          </article>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-          <!-- Project 2 -->
-          <article class="card">
-            <a href="project2.html">
-              <div class="card-image">
-                <img src="box/project2.png" alt="Project 2 Preview">
-              </div>
-              <div class="card-body">
-                <h3>Breaking Bad Show Page</h3>
-                <p>A TV-series overview page with custom layout and themed styling.</p>
-              </div>
-            </a>
-          </article>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
 
-          <!-- Project 3 -->
-          <article class="card">
-            <a href="project3.html">
-              <div class="card-image">
-                <img src="box/project3.png" alt="Project 3 Preview">
-              </div>
-              <div class="card-body">
-                <h3>Pancake Recipe Page</h3>
-                <p>A cooking recipe webpage featuring structured layout and food imagery.</p>
-              </div>
-            </a>
-          </article>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <a href="#top" class="logo">Jairo<span>Lizcano</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-        </div>
-      </div>
-    </section>
+  <!-- HEADER -->
+  <header class="hero">
+    <p class="hero-tagline">Web Developer • Designer • Creator</p>
+    <h1>Hi, I'm <span>Jairo&nbsp;Lizcano</span></h1>
+    <p class="hero-subtitle">
+      I design and build clean, responsive websites focused on usability, performance,
+      and modern visual design.
+    </p>
+    <img src="frog.png" alt="Profile Photo" class="profile-photo">
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m passionate about building user-focused web experiences. My goal is to bring ideas to life through clean design,
+      thoughtful layouts, and seamless user interactions.
+    </p>
+    <p>
+      I enjoy combining aesthetics with functionality — from typography and color systems
+      to responsive grids and smooth micro-interactions. I’m always learning and exploring
+      new tools to improve my work.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>A selection of recent work that highlights my approach to design and development.</p>
+
+    <!-- ⭐ FEATURED CAMPAIGN PROJECT -->
+    <div class="featured-project">
+      <article class="featured-card">
+        <a href="campaign.html">
+          <div class="featured-image">
+            <img src="box/campaign.png" alt="Campaign Project">
+          </div>
+          <div class="featured-body">
+            <h3>🔥 Campaign Project</h3>
+            <p>
+              A standout multimedia and web campaign combining visual design, strategy,
+              and interactive elements. This project represents my strongest work — focusing on branding,
+              layout, and storytelling through design.
+            </p>
+          </div>
+        </a>
+      </article>
+    </div>
+
+    <!-- REGULAR PROJECT GRID -->
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <article class="card">
+        <a href="project1.html">
+          <div class="card-image">
+            <img src="box/project1.png" alt="Netflix Landing Page">
+          </div>
+          <div class="card-body">
+            <h3>Netflix Landing Page</h3>
+            <p>A homepage-style UI inspired by Netflix with a clean, bold layout.</p>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card">
+        <a href="project2.html">
+          <div class="card-image">
+            <img src="box/project2.png" alt="Breaking Bad Show Page">
+          </div>
+          <div class="card-body">
+            <h3>Breaking Bad Show Page</h3>
+            <p>A TV-series overview page with custom layout and themed styling.</p>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="card">
+        <a href="project3.html">
+          <div class="card-image">
+            <img src="box/project3.png" alt="Pancake Recipe Page">
+          </div>
+          <div class="card-body">
+            <h3>Pancake Recipe Page</h3>
+            <p>A cooking recipe webpage featuring structured layout and food imagery.</p>
+          </div>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="contact-text">
+      <h2>Contact Me</h2>
+      <p>
+        Have a project in mind or want to collaborate?  
+        Feel free to reach out — I’m always open to connecting.
+      </p>
+    </div>
+
+    <div class="contact-links">
+      <a href="mailto:jairolizcanoguerra@hotmail.com" class="contact-pill">📧 Email</a>
+      <a href="https://linkedin.com/in/jairolizcano" target="_blank" class="contact-pill">💼 LinkedIn</a>
+      <a href="https://github.com/jairolizcano" target="_blank" class="contact-pill">🐙 GitHub</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 <span>Jairo Lizcano</span> — Built with ❤️ using HTML & CSS</p>
+  </footer>
+
+</body>
+</html>
