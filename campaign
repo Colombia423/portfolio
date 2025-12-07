@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campaign Project | Jairo Lizcano</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="campaign-nav">
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="campaign-header">
+    <h1>The Campaign Project</h1>
+    <p class="campaign-subtitle">
+      A collaborative visual and coding project focused on emotion-driven storytelling and responsive design.
+    </p>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <section class="campaign-container">
+
+    <!-- IMAGE -->
+    <div class="campaign-image">
+      <img src="important.png" alt="Campaign Project">
+    </div>
+
+    <!-- TEXT CONTENT -->
+    <div class="campaign-content">
+      <h2>Project Overview</h2>
+      <p>
+        The Campaign Project was created as a collaborative multimedia effort, blending design, imagery,
+        and storytelling into a cohesive visual experience.
+      </p>
+
+      <h2>Collaborators & Credits</h2>
+      <p>
+        This project features contributions from a talented creative team:
+      </p>
+
+      <ul class="credit-list">
+        <li><strong>Kristhany</strong> — Color palette direction & mood development</li>
+        <li><strong>Karine</strong> — Visual layout concepts & photography selection</li>
+        <li><strong>Athena</strong> — Typography, spacing, and accessibility feedback</li>
+        <li><strong>Q</strong> — Final design refinements & image preparation</li>
+      </ul>
+
+      <h2>Development & Coding</h2>
+      <p>
+        This entire page — including structure, responsiveness, and styling — was
+        <strong>coded by Jairo Lizcano</strong> using HTML and CSS and version-controlled through
+        <strong>GitHub</strong>.
+      </p>
+
+      <p>
+        The project demonstrates the power of collaboration by combining visual design teamwork
+        with strong front-end development execution.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="campaign-footer">
+    <p>© 2025 Jairo Lizcano — Campaign Project</p>
+  </footer>
+
+</body>
+</html>
