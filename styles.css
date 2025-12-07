@@ -139,13 +139,27 @@ body {
 }
 
 /* ------------------------------------------------------------------
-   FEATURED PROJECT
+   CAMPAIGN SPOTLIGHT SECTION
+------------------------------------------------------------------ */
+.campaign-spotlight {
+  margin-bottom: 40px;
+}
+
+.campaign-spotlight p {
+  max-width: 750px;
+  margin: auto;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+/* ------------------------------------------------------------------
+   FEATURED PROJECT (Campaign Spotlight)
 ------------------------------------------------------------------ */
 .featured-project {
   margin-bottom: 60px;
 }
 
-.featured-project .featured-link {
+.featured-link {
   display: block;
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -156,7 +170,7 @@ body {
   transition: transform 0.18s ease;
 }
 
-.featured-project .featured-link:hover {
+.featured-link:hover {
   transform: translateY(-4px);
 }
 
@@ -176,8 +190,13 @@ body {
   color: var(--navy);
 }
 
+.featured-body p {
+  font-size: 1.1rem;
+  color: #1a1a1a !important;
+}
+
 /* ------------------------------------------------------------------
-   PROJECT GRID
+   PROJECT GRID (Regular Projects)
 ------------------------------------------------------------------ */
 .projects-grid {
   display: grid;
@@ -212,18 +231,26 @@ body {
 
 .card-body {
   padding: 20px;
+  text-align: left;
 }
 
 .card-body h3 {
   font-size: 1.3rem;
-  color: var(--navy);
+  color: var(--navy) !important;
   margin-bottom: 8px;
 }
 
-/* Remove underlines from project links */
-.projects-grid a,
-.featured-link,
-.card-body h3 {
+.card-body p {
+  color: #1a1a1a !important;
+  font-size: 1rem;
+}
+
+/* Remove all purple visited link styles */
+.projects-grid a:link,
+.projects-grid a:visited,
+.featured-link:link,
+.featured-link:visited {
+  color: inherit !important;
   text-decoration: none !important;
 }
 
@@ -264,7 +291,7 @@ body {
 }
 
 /* ------------------------------------------------------------------
-   CAMPAIGN PAGE — PROJECT TEMPLATE
+   PROJECT TEMPLATE (Campaign Page)
 ------------------------------------------------------------------ */
 .project-header {
   text-align: center;
@@ -288,9 +315,9 @@ body {
 
 .project-content h2 {
   font-size: 2rem;
-  color: var(--navy);
-  margin: 30px 0 15px;
   text-align: center;
+  margin: 30px 0 15px;
+  color: var(--navy);
 }
 
 .project-image {
