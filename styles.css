@@ -179,6 +179,24 @@ header h1 span {
   object-fit: cover;
 }
 
+/* --------------------------- */
+/* REMOVE UNDERLINES IN PROJECTS */
+/* --------------------------- */
+
+#projects a,
+.card a,
+.featured-project a,
+.featured-body h3,
+.card-body h3 {
+  text-decoration: none !important;
+}
+
+#projects a:hover,
+.card a:hover,
+.featured-project a:hover {
+  text-decoration: none !important;
+}
+
 /* CONTACT */
 .contact-section {
   text-align: center;
@@ -235,7 +253,6 @@ footer {
 
 .campaign-subtitle {
   opacity: 0.9;
-  margin-top: 8px;
 }
 
 .campaign-container {
