@@ -99,7 +99,11 @@ body {
   margin-bottom: 10px;
 }
 
-.hero-section h1 span {
+.first-name {
+  color: #ffffff;
+}
+
+.last-name {
   color: var(--gold);
 }
 
@@ -139,12 +143,8 @@ body {
 }
 
 /* ------------------------------------------------------------------
-   CAMPAIGN SPOTLIGHT SECTION
+   CAMPAIGN SPOTLIGHT
 ------------------------------------------------------------------ */
-.campaign-spotlight {
-  margin-bottom: 40px;
-}
-
 .campaign-spotlight p {
   max-width: 750px;
   margin: auto;
@@ -152,9 +152,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* ------------------------------------------------------------------
-   FEATURED PROJECT (Campaign Spotlight)
------------------------------------------------------------------- */
 .featured-project {
   margin-bottom: 60px;
 }
@@ -184,19 +181,13 @@ body {
   padding: 28px 30px;
 }
 
-.featured-body h3 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  color: var(--navy);
-}
-
 .featured-body p {
   font-size: 1.1rem;
   color: #1a1a1a !important;
 }
 
 /* ------------------------------------------------------------------
-   PROJECT GRID (Regular Projects)
+   REGULAR PROJECT GRID
 ------------------------------------------------------------------ */
 .projects-grid {
   display: grid;
@@ -236,7 +227,7 @@ body {
 
 .card-body h3 {
   font-size: 1.3rem;
-  color: var(--navy) !important;
+  color: #1a2530 !important;
   margin-bottom: 8px;
 }
 
@@ -245,7 +236,6 @@ body {
   font-size: 1rem;
 }
 
-/* Remove all purple visited link styles */
 .projects-grid a:link,
 .projects-grid a:visited,
 .featured-link:link,
@@ -255,7 +245,7 @@ body {
 }
 
 /* ------------------------------------------------------------------
-   CONTACT SECTION
+   CONTACT
 ------------------------------------------------------------------ */
 .contact-links {
   margin-top: 30px;
@@ -291,7 +281,7 @@ body {
 }
 
 /* ------------------------------------------------------------------
-   PROJECT TEMPLATE (Campaign Page)
+   PROJECT TEMPLATE (CAMPAIGN PAGE)
 ------------------------------------------------------------------ */
 .project-header {
   text-align: center;
@@ -300,17 +290,11 @@ body {
   color: var(--white);
 }
 
-.project-header h1 {
-  font-size: 3rem;
-  margin-bottom: 12px;
-}
-
 .project-content {
   max-width: 900px;
   margin: auto;
   padding: 50px 20px;
   line-height: 1.7;
-  text-align: left;
 }
 
 .project-content h2 {
@@ -323,16 +307,16 @@ body {
 .project-image {
   width: 100%;
   border-radius: 12px;
-  box-shadow: var(--shadow-medium);
   margin-bottom: 30px;
+  box-shadow: var(--shadow-medium);
 }
 
 .back-link {
   display: inline-block;
   margin-top: 40px;
-  font-size: 1.1rem;
-  color: var(--navy-light);
+  font-size: 1.15rem;
   font-weight: 600;
+  color: var(--navy-light);
   transition: 0.22s ease;
 }
 
