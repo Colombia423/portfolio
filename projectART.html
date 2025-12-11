@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art Shop App | Jairo Lizcano</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <style>
+    .project-header {
+      text-align: center;
+      padding: 130px 20px 60px;
+      background: linear-gradient(135deg, #1a2530, #31485f);
+      color: white;
+    }
+    .project-header h1 { font-size: 3rem; }
+    .project-header p { font-size: 1.2rem; }
+
+    .project-content {
+      max-width: 900px;
+      margin: auto;
+      padding: 50px 20px;
+      line-height: 1.7;
+    }
+
+    .project-image {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+
+    /* ⭐ Visit Website Button */
+    .visit-site-btn {
+      display: block;
+      width: fit-content;
+      margin: 20px auto 40px auto;
+      padding: 12px 26px;
+      background: #1a2530;
+      color: white;
+      font-weight: 700;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.25s;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+    .visit-site-btn:hover {
+      background: #31485f;
+      transform: translateY(-3px);
+    }
+
+    .product-grid {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+
+    .product-card {
+      width: 200px;
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .btn-cart {
+      margin-top: 10px;
+      padding: 8px 15px;
+      border: 2px solid black;
+      border-radius: 8px;
+      background: white;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .rating {
+      font-size: 1.2rem;
+      margin-top: 8px;
+      color: #aaa;
+      letter-spacing: 2px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #31485f;
+      transition: .2s;
+    }
+    .back-link:hover {
+      transform: translateY(-3px);
+      color: #1a2530;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">Jairo<span>Lizcano</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="project-header">
+    <h1>Art Shop • Media App</h1>
+    <p>A marketplace-style social platform where users post, rate, and purchase artwork.</p>
+  </header>
+
+  <main class="project-content">
+
+    <img src="box/ART.png" class="project-image" alt="Art App Screenshot">
+
+    <!-- ⭐ Visit Website Button -->
+    <a href="https://YOUR-LINK-HERE.com" target="_blank" class="visit-site-btn">
+      Visit Live Website
+    </a>
+
+    <h2>Overview</h2>
+    <p>
+      This project merges an art market with social media interaction. Users can browse art,
+      leave ratings, add pieces to cart, and explore new artists through a feed-style layout.
+    </p>
+
+    <h2>Sample Artwork Cards</h2>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="box/ART.png" alt="">
+        <button class="btn-cart">Add to Cart</button>
+        <p>Reviews</p>
+        <div class="rating">★★★★★</div>
+      </div>
+
+      <div class="product-card">
+        <img src="box/ART.png" alt="">
+        <button class="btn-cart">Add to Cart</button>
+        <p>Reviews</p>
+        <div class="rating">★★★★☆</div>
+      </div>
+    </div>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Artwork browsing feed</li>
+      <li>Add to cart interaction</li>
+      <li>Star rating & reviews</li>
+      <li>Artist profile preview</li>
+    </ul>
+
+    <a href="index.html#projects" class="back-link">⬅ Back to Portfolio</a>
+  </main>
+
+</body>
+</html>
