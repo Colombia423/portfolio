@@ -42,15 +42,34 @@
       color: #1a2530;
     }
 
-    /* ⭐ UPDATED — Shows full image without cropping */
+    /* ⭐ Updated Image Style */
     .project-image {
       width: 100%;
-      height: auto;         /* 🔥 allows full image to show */
-      object-fit: contain;  /* 🔥 prevents cropping */
+      height: auto;
+      object-fit: contain;
       border-radius: 12px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      background: #ffffff;  /* helps image boundaries look clean */
+      background: #ffffff;
+    }
+
+    /* ⭐ NEW Visit Website Button */
+    .visit-site-btn {
+      display: block;
+      width: fit-content;
+      margin: 0 auto 40px auto;
+      padding: 12px 26px;
+      background: #1a2530;
+      color: white;
+      font-weight: 700;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.25s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+    .visit-site-btn:hover {
+      background: #31485f;
+      transform: translateY(-3px);
     }
 
     .back-link {
@@ -98,6 +117,11 @@
   <main class="project-content">
 
     <img src="box/project3.png" alt="Pancake Recipe Page Screenshot" class="project-image" />
+
+    <!-- ⭐ NEW Visit Website Button -->
+    <a href="https://colombia423.github.io/mmp240/recipe/recipe.html"_blank" class="visit-site-btn">
+      Visit Live Website
+    </a>
 
     <h2>Overview</h2>
     <p>
